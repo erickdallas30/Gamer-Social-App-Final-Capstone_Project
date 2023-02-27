@@ -89,7 +89,9 @@ export const Profile = () => {
   };
 
   const getPublications = async (nextPage = 1, newProfile = false) => {
-    const request = await fetch(Global.url + "publication/user/" + params.userId + "/" + nextPage, {
+    const request = await fetch(
+      Global.url + "publication/user/" + params.userId + "/" + nextPage,
+      {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -131,7 +133,7 @@ export const Profile = () => {
 
   return (
     <>
-    <br/>
+      <br />
       <header className="aside__profile-info">
         <div className="profile-info__general-info">
           <div className="general-info__container-avatar">
@@ -139,14 +141,14 @@ export const Profile = () => {
               <img
                 src={Global.url + "user/avatar/" + user.image}
                 className="container-avatar__img"
-                alt="Foto de perfil"
+                alt="Profile Picture"
               />
             )}
             {user.image == "default.png" && (
               <img
                 src={avatar}
                 className="container-avatar__img"
-                alt="Foto de perfil"
+                alt="Profile Picture"
               />
             )}
           </div>

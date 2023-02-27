@@ -32,20 +32,28 @@ export const Register = () => {
 
   return (
     <>
-      <br/><br/>
+      <br />
+      <br />
       <header className="content__header content__header--public">
         <h1 className="content__title">Register</h1>
       </header>
 
       <div className="content__posts1">
+        {saved == "saved" ? (
+          <strong className="alert2 alert-success">
+            User registration successful!
+          </strong>
+        ) : (
+          ""
+        )}
 
-      {saved == "saved" ?
-        <strong className="alert alert-success">User registration successful!</strong>
-        : ""}
-
-      {saved == "error" ?
-        <strong className="alert alert-danger">User registration failed, Please try again!</strong>
-        : ""}
+        {saved == "error" ? (
+          <strong className="alert2 alert-danger">
+            User registration failed, Please try again!
+          </strong>
+        ) : (
+          ""
+        )}
 
         <form className="register-form" onSubmit={saveUser}>
           <div className="form-group">

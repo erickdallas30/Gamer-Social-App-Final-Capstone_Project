@@ -68,7 +68,7 @@ export const Settings = () => {
 
   return (
     <>
-    <br/>
+      <br />
       <header className="content__header content__header--public">
         <h1 className="content__title">Settings</h1>
       </header>
@@ -125,14 +125,14 @@ export const Settings = () => {
                 <img
                   src={Global.url + "user/avatar/" + auth.image}
                   className="container-avatar__img"
-                  alt="Foto de perfil"
+                  alt="Profile Picture"
                 />
               )}
               {auth.image == "default.png" && (
                 <img
                   src={avatar}
                   className="container-avatar__img"
-                  alt="Foto de perfil"
+                  alt="Profile Picture"
                 />
               )}
             </div>

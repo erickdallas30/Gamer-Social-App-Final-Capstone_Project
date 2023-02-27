@@ -83,14 +83,14 @@ export const UserList = ({
                       <img
                         src={Global.url + "user/avatar/" + user.image}
                         className="post__user-image"
-                        alt="Foto de perfil"
+                        alt="Profile Picture"
                       />
                     )}
                     {user.image == "default.png" && (
                       <img
                         src={avatar}
                         className="post__user-image"
-                        alt="Foto de perfil"
+                        alt="Profile Picture"
                       />
                     )}
                   </Link>

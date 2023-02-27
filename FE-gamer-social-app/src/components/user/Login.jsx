@@ -55,13 +55,13 @@ export const Login = () => {
 
       <div className="content__posts1">
         {saved == "login" ? (
-          <strong className="alert alert-success">Login successful!</strong>
+          <strong className="alert2 alert-success">Login successful!</strong>
         ) : (
           " "
         )}
 
         {saved == "error" ? (
-          <strong className="alert alert-danger">
+          <strong className="alert2 alert-danger">
             Login failed, Please try again!
           </strong>
         ) : (

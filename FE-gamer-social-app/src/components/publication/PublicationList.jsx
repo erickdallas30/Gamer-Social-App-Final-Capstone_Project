@@ -57,14 +57,14 @@ export const PublicationList = ({
                           Global.url + "user/avatar/" + publication.user.image
                         }
                         className="post__user-image"
-                        alt="Foto de perfil"
+                        alt="Profile Picture"
                       />
                     )}
                     {publication.user.image == "default.png" && (
                       <img
                         src={avatar}
                         className="post__user-image"
-                        alt="Foto de perfil"
+                        alt="Profile Picture"
                       />
                     )}
                   </Link>
@@ -83,7 +83,8 @@ export const PublicationList = ({
 
                   <h4 className="post__content">{publication.text}</h4>
                   {publication.file && (
-                    <img className="post__images"
+                    <img
+                      className="post__images"
                       src={Global.url + "publication/media/" + publication.file}
                     />
                   )}
