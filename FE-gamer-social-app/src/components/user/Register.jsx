@@ -32,11 +32,12 @@ export const Register = () => {
 
   return (
     <>
+      <br/><br/>
       <header className="content__header content__header--public">
         <h1 className="content__title">Register</h1>
       </header>
 
-      <div className="content__posts">
+      <div className="content__posts1">
 
       {saved == "saved" ?
         <strong className="alert alert-success">User registration successful!</strong>

@@ -68,10 +68,11 @@ export const Settings = () => {
 
   return (
     <>
+    <br/>
       <header className="content__header content__header--public">
         <h1 className="content__title">Settings</h1>
       </header>
-      <div className="content__posts">
+      <div className="content__posts1">
         {saved == "saved" ? (
           <strong className="alert alert-success">settings updated!!</strong>
         ) : (
@@ -142,7 +143,7 @@ export const Settings = () => {
           <input
             type="submit"
             value="Submit Update"
-            className="btn btn-success"
+            className="btn btn-success form-post__btn-submit"
           />
         </form>
         <br />

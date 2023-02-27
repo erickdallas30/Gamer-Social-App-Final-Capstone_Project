@@ -1,28 +1,28 @@
 /*ESTILOS GENERALES*/
 :root {
   --color-general-text: #333;
-  --color-backgroud-navbar: #3785e5;
+  --color-backgroud-navbar: #ff7700;
   --color-text-navbar: white;
-  --color-hover-navbar: #1756cc;
+  --color-hover-navbar: #005eff;
 
   --color-border-headers: #eee;
 
-  --color-background-btn-success: #5cb85c;
-  --color-border-btn-success: #4cae4c;
-  --color-background-btn-success-hover: #449d44;
-  --color-border-btn-success-hover: #398439;
+  --color-background-btn-success: #005eff;
+  --color-border-btn-success: #005eff;
+  --color-background-btn-success-hover: #0000cc;
+  --color-border-btn-success-hover: #2d2477;
 
-  --color-background-btn-delete: #d9534f;
-  --color-border-btn-delete: #d43f3a;
-  --color-background-btn-delete-hover: #c9302c;
-  --color-border-btn-delete-hover: #ac2925;
+  --color-background-btn-delete: #da0000;
+  --color-border-btn-delete: #2d2477;
+  --color-background-btn-delete-hover: #ae0000;
+  --color-border-btn-delete-hover: #2d2477;
 
   --color-border-post: #ddd;
-  --color-name-user: #337ab7;
+  --color-name-user: #0000cc;
 
-  --color-text-black: #555;
-  --color-text-nickname: #969393;
-  --color-number-stats: green;
+  --color-text-black: black;
+  --color-text-nickname: #0000cc;
+  --color-number-stats: #0000cc;
 
   --color-border-textarea: #ccc;
   --color-border-textarea-focus: #66afe9;
@@ -61,16 +61,18 @@ body {
   max-height: 80rem;
 }
 
-/*ESTILOS NAVBAR*/
+/*NAVBAR*/
 .layout__navbar {
   width: 100%;
   grid-area: nav;
-  background-color: var(--color-backgroud-navbar);
+  /* background-color: var(--color-backgroud-navbar); */
+  background-image: linear-gradient(#1b03a3, #0000ff, #0a42dc);
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 2rem;
-  height: 5.3rem;
+  height: 8rem;
+  font-size: 21px;
 }
 
 .layout__navbar * {
@@ -78,12 +80,13 @@ body {
 }
 
 .navbar__title {
-  font-size: 1.8rem;
-  padding: 1.8rem;
+  font-size: 2.6rem;
+  /* padding: 1rem; */
+  text-align: center;
 }
 
 .navbar__container-lists {
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding-left: 1.5rem;
@@ -96,7 +99,7 @@ body {
 }
 
 .menu-list__link {
-  padding: 1.8rem;
+  padding: 2.8rem;
 }
 
 .menu-list__title {
@@ -120,20 +123,20 @@ body {
 }
 
 .list-end__img {
-  width: 4rem;
-  height: 4rem;
+  width: 6.7rem;
+  height: 6.7rem;
   border-radius: 3.2rem;
 }
 
 .list-end__link {
-  padding: 1.8rem;
+  padding: 2.8rem;
 }
 
 .list-end__name {
   padding: 0.5rem;
 }
 
-/*ESTILOS DE CONTENIDO*/
+/*CONTENT*/
 .layout__content {
   grid-area: content;
   padding: 0 1.5rem;
@@ -145,10 +148,11 @@ body {
 
 .content__header,
 .aside__header {
-  width: 100%;
-  border-bottom: 1px solid var(--color-border-headers);
+  width: 95%;
+  border: 1px solid var(--color-border-headers);
   margin-top: 1rem;
   margin-bottom: 2rem;
+  margin-left: 2rem;
   padding-bottom: 1rem;
   display: flex;
   flex-direction: row;
@@ -159,6 +163,7 @@ body {
 .aside__title {
   font-size: 3.5rem;
   margin-right: 1rem;
+  margin-left: 2rem;
 }
 
 .content__button {
@@ -172,10 +177,11 @@ body {
   cursor: pointer;
 }
 
-.content__button--right{
+.content__button--right {
   float: right;
 }
 
+.form-post__btn-submit:hover,
 .content__button:hover,
 .content__btn-more-post:hover {
   background-color: var(--color-background-btn-success-hover);
@@ -183,7 +189,13 @@ body {
 }
 
 .content__posts {
+  width: 95%;
+  /* margin-left: 2rem; */
+}
+
+.content__posts1 {
   width: 100%;
+  margin-left: 3rem;
 }
 
 .posts__post {
@@ -192,6 +204,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 2rem;
+  margin-left: 2rem;
+  /* margin-right: 1rem; */
   border-radius: 0.4rem;
   border: 1px solid var(--color-border-post);
   padding: 1.5rem;
@@ -232,6 +246,19 @@ body {
   margin: 1rem 0;
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.post__images {
+  width: 750px;
+  height: 450px;
+  border-radius: 15px;
+  border: solid black;
+}
+
+.post__body{
+  align-items: center;
+  /* text-align: center; */
+  
 }
 
 .post__buttons {
@@ -281,7 +308,7 @@ body {
   font-size: 1.4rem;
 }
 
-/*ESTILOS BARRA LATERAL*/
+/*SIDE BAR*/
 .layout__aside {
   grid-area: aside;
   margin-right: 2rem;
@@ -295,11 +322,14 @@ body {
   border: 1px solid var(--color-border-post);
   padding: 2.5rem;
   margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-right: 5rem;
   border-radius: 0.4rem;
 }
 
 .profile-info__general-info {
-  width: 100%;
+  width: 98%;
   display: flex;
   flex-direction: row;
 }
@@ -364,6 +394,7 @@ body {
   width: 100%;
   border: 1px solid var(--color-border-post);
   padding: 2.5rem;
+  /* margin-left: 2rem; */
   border-radius: 0.4rem;
 }
 
@@ -447,8 +478,8 @@ button {
 }
 
 .alert-success {
-  background: #5cb85c;
-  border: 1px solid #0c8e0c;
+  background: #005eff;
+  border: 1px solid #2d2477;
   color: white;
 }
 

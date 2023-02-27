@@ -102,8 +102,7 @@ export const UserList = ({
                       to={"/social/profile/" + user._id}
                       className="user-info__name"
                     >
-                      {user.name}
-                      {user.surname}
+                      {user.name} {user.surname}
                     </Link>
                     <span className="user-info__divider"> | </span>
                     <Link
@@ -149,7 +148,7 @@ export const UserList = ({
       {more && (
         <div className="content__container-btn">
           <button className="content__btn-more-post" onClick={nextPage}>
-            Show more members
+            Show More Members
           </button>
         </div>
       )}

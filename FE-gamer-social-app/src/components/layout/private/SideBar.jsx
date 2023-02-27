@@ -75,12 +75,15 @@ export const SideBar = () => {
 
   return (
     <aside className="layout__aside">
+      <br/>
       <header className="aside__header">
         <h1 className="aside__title">Hello, {auth.name}</h1>
       </header>
 
       <div className="aside__container">
+        
         <div className="aside__profile-info">
+          
           <div className="profile-info__general-info">
             <div className="general-info__container-avatar">
               {auth.image != "default.png" && (

@@ -10,13 +10,13 @@ export const Followers = () => {
   const [more, setMore] = useState(true);
   const [following, setFollowing] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [userProfile, setUserProfile] = useState({})
+  const [userProfile, setUserProfile] = useState({});
 
   const params = useParams();
 
   useEffect(() => {
     getMembers(1);
-    GetProfile(params.userId, setUserProfile )
+    GetProfile(params.userId, setUserProfile);
   }, []);
 
   const getMembers = async (nextPage = 1) => {
@@ -26,7 +26,8 @@ export const Followers = () => {
     const userId = params.userId;
 
     // request to get all members from the DB
-    const request = await fetch(Global.url + "follow/followers/" + userId + "/" + nextPage,
+    const request = await fetch(
+      Global.url + "follow/followers/" + userId + "/" + nextPage,
       {
         method: "GET",
         headers: {
@@ -67,8 +68,11 @@ export const Followers = () => {
 
   return (
     <>
+      <br />
       <header className="content__header">
-        <h1 className="content__title">Followers of {userProfile.name} {userProfile.surname}</h1>
+        <h1 className="content__title">
+          {userProfile.name} {userProfile.surname} Followers
+        </h1>
       </header>
 
       <UserList

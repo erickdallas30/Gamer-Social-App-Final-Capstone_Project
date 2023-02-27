@@ -20,14 +20,14 @@ export const Nav = () => {
         <li className="menu-list__item">
           <NavLink to="/social/feed" className="menu-list__link">
             <i className="fa-solid fa-list"></i>
-            <span className="menu-list__title">Timeline</span>
+            <span className="menu-list__title">Publications</span>
           </NavLink>
         </li>
 
         <li className="menu-list__item">
           <NavLink to="/social/members" className="menu-list__link">
-            <i className="fa-solid fa-user"></i>
-            <span className="menu-list__title">Members</span>
+            <i className="fa-solid fa-gamepad"></i>
+            <span className="menu-list__title">Gamers</span>
           </NavLink>
         </li>
       </ul>

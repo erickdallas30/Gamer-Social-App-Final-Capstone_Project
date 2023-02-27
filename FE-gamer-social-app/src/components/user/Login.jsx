@@ -35,12 +35,12 @@ export const Login = () => {
       setSaved("login");
 
       //set auth data
-      setAuth(data.user)
+      setAuth(data.user);
 
       //redirection
       setTimeout(() => {
-        window.location.reload()
-      }, 1000)
+        window.location.reload();
+      }, 1000);
     } else {
       setSaved("error");
     }
@@ -48,11 +48,12 @@ export const Login = () => {
 
   return (
     <div>
+      <br/><br/>
       <header className="content__header    content__header--public">
         <h1 className="content__title">Login</h1>
       </header>
 
-      <div className="content__posts">
+      <div className="content__posts1">
         {saved == "login" ? (
           <strong className="alert alert-success">Login successful!</strong>
         ) : (
@@ -78,7 +79,11 @@ export const Login = () => {
             <input type="password" name="password" onChange={changed} />
           </div>
 
-          <input type="submit" value="Login" className="btn btn-success" />
+          <input
+            type="submit"
+            value="Login"
+            className="btn btn-success form-post__btn-submit"
+          />
         </form>
       </div>
     </div>

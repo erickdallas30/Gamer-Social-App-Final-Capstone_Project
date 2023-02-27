@@ -83,7 +83,7 @@ export const PublicationList = ({
 
                   <h4 className="post__content">{publication.text}</h4>
                   {publication.file && (
-                    <img
+                    <img className="post__images"
                       src={Global.url + "publication/media/" + publication.file}
                     />
                   )}
@@ -107,7 +107,7 @@ export const PublicationList = ({
       {more && (
         <div className="content__container-btn">
           <button className="content__btn-more-post" onClick={nextPage}>
-            Show more publications
+            Show More Publications
           </button>
         </div>
       )}

@@ -43,6 +43,9 @@ a:not([class]) {
 }
 
 img {
+    /* display: block;
+    width: 450px;
+    height: 450px; */
     max-width: 100%;
     display: block;
 }

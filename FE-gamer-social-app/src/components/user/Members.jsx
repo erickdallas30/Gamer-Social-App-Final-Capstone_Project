@@ -49,8 +49,9 @@ export const Members = () => {
 
   return (
     <>
+      <br/>
       <header className="content__header">
-        <h1 className="content__title">Members</h1>
+        <h1 className="content__title">Gamers</h1>
       </header>
 
       <UserList

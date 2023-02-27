@@ -24,7 +24,7 @@ export const Feed = () => {
     }
 
     const request = await fetch(
-      Global.url + "publication/feed/" + params.userId + nextPage,
+      Global.url + "publication/feed/" +  nextPage,
       {
         method: "GET",
         headers: {
@@ -46,7 +46,7 @@ export const Feed = () => {
 
       setPublications(newPublications);
 
-      if (!newPosts && publications.length >= data.total - data.publications.length) {
+      if (!newPosts && publications.length >= (data.total - data.publications.length)) {
         setMore(false);
       }
 
@@ -58,19 +58,19 @@ export const Feed = () => {
 
   return (
     <>
+    <br/>
       <header className="content__header">
-        <h1 className="content__title">Timeline</h1>
+        <h1 className="content__title">Publications</h1>
         <button
           className="content__button"
           onClick={() => getPublications(1, true)}
         >
-          show new posts
+          Show New Publications
         </button>
       </header>
 
       <PublicationList
         publications={publications}
-        setPublications={setPublications}
         getPublications={getPublications}
         page={page}
         setPage={setPage}

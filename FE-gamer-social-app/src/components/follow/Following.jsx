@@ -68,8 +68,11 @@ export const Following = () => {
 
   return (
     <>
+      <br />
       <header className="content__header">
-        <h1 className="content__title">{userProfile.name} {userProfile.surname} is Following these Members</h1>
+        <h1 className="content__title">
+          {userProfile.name} {userProfile.surname} Followings
+        </h1>
       </header>
 
       <UserList

@@ -131,6 +131,7 @@ export const Profile = () => {
 
   return (
     <>
+    <br/>
       <header className="aside__profile-info">
         <div className="profile-info__general-info">
           <div className="general-info__container-avatar">
