@@ -31,10 +31,10 @@ export const Register = () => {
   }; //end of save method
 
   return (
-    <>
+    <div className="register-container">
       <br />
       <br />
-      <header className="content__header content__header--public">
+      <header className="content__header2 content__header--public">
         <h1 className="content__title">Register</h1>
       </header>
 
@@ -88,6 +88,6 @@ export const Register = () => {
           />
         </form>
       </div>
-    </>
+    </div>
   );
 };

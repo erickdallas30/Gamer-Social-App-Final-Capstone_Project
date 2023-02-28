@@ -40,16 +40,16 @@ export const Login = () => {
       //redirection
       setTimeout(() => {
         window.location.reload();
-      }, 1000);
+      }, 2000);
     } else {
       setSaved("error");
     }
   };
 
   return (
-    <div className="logo-container">
+    <div className="login-container">
       <br/><br/>
-      <header className="content__header    content__header--public">
+      <header className="content__header1    content__header--public">
         <h1 className="content__title">Login</h1>
       </header>
 
@@ -88,5 +88,6 @@ export const Login = () => {
       </div>
       
     </div>
+    
   );
 };

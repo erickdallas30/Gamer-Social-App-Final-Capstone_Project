@@ -67,14 +67,14 @@ export const Settings = () => {
   };
 
   return (
-    <>
+    <div className="settings-container">
       <br />
       <header className="content__header content__header--public">
         <h1 className="content__title">Settings</h1>
       </header>
       <div className="content__posts1">
         {saved == "saved" ? (
-          <strong className="alert2 alert-success">Profile Information updated!!</strong>
+          <strong className="alert3 alert-success">Profile Information updated!!</strong>
         ) : (
           ""
         )}
@@ -148,6 +148,6 @@ export const Settings = () => {
         </form>
         <br />
       </div>
-    </>
+    </div>
   );
 };
