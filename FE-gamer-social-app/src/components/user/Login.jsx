@@ -47,7 +47,7 @@ export const Login = () => {
   };
 
   return (
-    <div>
+    <div className="logo-container">
       <br/><br/>
       <header className="content__header    content__header--public">
         <h1 className="content__title">Login</h1>
@@ -86,6 +86,7 @@ export const Login = () => {
           />
         </form>
       </div>
+      
     </div>
   );
 };

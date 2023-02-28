@@ -63,7 +63,7 @@ export const SideBar = () => {
       }
     }
 
-    //clear publication form after submittingthe post
+    //clear publication form after submitting the post
     //CHECK WHY IS NOT CLEARING WHEN POSTING A PUBLICATION ,
     //ONLY CLEAR WHEN POSTING PICTURE AND PUB TOGETHER
     //      COME BACK HERE!!!!!
@@ -76,12 +76,12 @@ export const SideBar = () => {
   return (
     <aside className="layout__aside">
       <br />
-      <header className="aside__header">
+      <header className="aside__header1">
         <h1 className="aside__title">Hello, {auth.name}</h1>
       </header>
 
       <div className="aside__container">
-        <div className="aside__profile-info">
+        <div className="aside__profile-info1">
           <div className="profile-info__general-info">
             <div className="general-info__container-avatar">
               {auth.image != "default.png" && (
@@ -156,7 +156,7 @@ export const SideBar = () => {
 
           {stored == "error" ? (
             <strong className="alert alert-danger">
-              Publication posting failed, Please try again!!
+              Posting failed, Please try again!!
             </strong>
           ) : (
             ""

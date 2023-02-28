@@ -74,14 +74,14 @@ export const Settings = () => {
       </header>
       <div className="content__posts1">
         {saved == "saved" ? (
-          <strong className="alert alert-success">settings updated!!</strong>
+          <strong className="alert2 alert-success">Profile Information updated!!</strong>
         ) : (
           ""
         )}
 
         {saved == "error" ? (
-          <strong className="alert alert-danger">
-            settings update failed, Please try again!
+          <strong className="alert2 alert-danger">
+            Settings update failed, Please try again!
           </strong>
         ) : (
           ""
